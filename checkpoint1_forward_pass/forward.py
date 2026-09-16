@@ -21,8 +21,8 @@ def forward(X, W, b):
     Compute y_pred = X @ W + b
     Return y_pred with shape (n_samples, n_outputs)
     """
-    # TODO: implement this
-    pass
+    y_pred = X @ W + b
+    return y_pred
 
 
 def mse_loss(y_pred, y_true):
@@ -30,8 +30,7 @@ def mse_loss(y_pred, y_true):
     Compute mean squared error: mean((y_pred - y_true)^2)
     Return a single scalar.
     """
-    # TODO: implement this
-    pass
+    return np.mean((y_pred - y_true) ** 2)
 
 
 # --- Run it ---
